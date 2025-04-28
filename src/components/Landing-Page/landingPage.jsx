@@ -13,7 +13,7 @@ const navTree = [
   {
     label: "Natural Language Processing",
     // url: "https://rayyan-ashraf.notion.site/ebd/1d8cc74e579a80998c55d1f7f53ada58",
-    url: "http://localhost:5173/5e314bf3a4f39a51736d66acc5a259059e3f11263af328eec622c2ab9b413b4d",
+    url: "https://rnotion-questions.vercel.app/5e314bf3a4f39a51736d66acc5a259059e3f11263af328eec622c2ab9b413b4d",
     children: [
       {
         label: "Phases of Natural Language Processing",
