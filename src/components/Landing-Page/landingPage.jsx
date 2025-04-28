@@ -410,7 +410,7 @@ const LandingPage = () => {
             >
               <SiLinkedin />
               &nbsp;Connect
-            </a> | v3.1.1-1
+            </a> | v1.0.0
           </footer>
         )}
       </aside>
