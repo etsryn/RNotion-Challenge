@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./landingPage.module.css";
 import { SiLinkedin } from "react-icons/si";
-import { PenLine, ChevronRight, ChevronDown, ChevronLeft, Menu } from "lucide-react";
+import { PenLine, Lock, ChevronRight, ChevronDown, ChevronLeft, Menu } from "lucide-react";
 import Popup from '../popups/popUp';
 
 /* ─── navigation tree ─────────────────────────────────────────────────────────────────────────────────────────── */
@@ -110,6 +110,16 @@ const navTree = [
       },
     ],
   },
+  // {
+  //   label: "PRIVATE - Access Denied",
+  //   url: "https://rayyan-ashraf.notion.site/ebd/1dfcc74e579a803ba8b7dd88c727c445",
+  //   children: [
+  //     {
+  //       label: "Algebra",
+  //       url: "https://rayyan-ashraf.notion.site/ebd/1d8cc74e579a806e99f5e8289faeefdd",
+  //     },
+  //   ],
+  // },
 ];
 
 /* ─── helpers ────────────────────────────────────────── */
@@ -356,6 +366,19 @@ const LandingPage = () => {
                 onBlur={() => setTimeout(() => setOpen(false), 150)}
                 className={styles.search}
               />
+
+            <a
+                href="https://rnotion-questions.vercel.app/4e6b6e1fa6aa78891e0b3ad5efdaec0211e99de3249905fe62cc05cf4d8c6fa0" // Alhaan Questions
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.challengeButtonLink}
+                >
+            <div>
+              <button type="button" className={styles.challengeButton}>
+              <Lock size={16} color="darkgray" style={{ marginRight: 6 }} /> PRIVATE - Access Denied
+              </button>
+            </div>
+            </a>
               {open && term && matches.length > 0 && (
                 <ul className={styles.searchResults}>
                   {matches.slice(0, 20).map((m) => (
